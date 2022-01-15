@@ -7,7 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body, #app, #app>div, #root {
+  height: 100%
+}
+
+.home-image{
+  height: -webkit-fill-available;
+  background-size: contain;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
