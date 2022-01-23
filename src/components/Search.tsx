@@ -18,7 +18,7 @@ export default function Search() {
 
   return (
     <>
-      <div style={{ display: "inline", width: 200 }}>
+      <div style={{ display: "inline"}}>
         <input type={'text'} className='search' onFocus={() =>{
             setValue('')
             SetNotPesquisar(true)

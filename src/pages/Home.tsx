@@ -3,11 +3,9 @@ import React, { ReactElement } from 'react';
 import useWindowDimensions from '../config/getDimensions';
 import {MenuAppBar}  from '../components/NavbarElements';
 import background from '../public/fundo.png'
-import { Box, Modal, Typography } from '@mui/material';
-import { maxWidth } from '@mui/system';
+import { Typography } from '@mui/material';
 import { AuthStoreImpl } from '../stores/authStore';
-import CustomizedDialogs from '../components/CustomDialog';
-import { observer, inject } from 'mobx-react';
+
 import { useAuthStore } from '../StoresContext';
 interface Props {
   authStore: AuthStoreImpl;

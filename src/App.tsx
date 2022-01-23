@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import Home from './pages/Home'
-
+import EditProfile from './pages/EditProfile'
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,8 +29,8 @@ function App(): JSX.Element{
           <Route path="/sobre">
             <Home />
           </Route>
-          <Route path="/users">
-            <>Hi</>
+          <Route path="/users/:id">
+            <EditProfile/>
           </Route>
           <Route path="/">
           <Home />

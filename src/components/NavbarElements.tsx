@@ -101,6 +101,7 @@ export const MenuAppBar = observer(() => {
                   {" "}
                   {index === 1 && (
                     <img
+                    style={{ marginTop: '20px' }}
                       src={process.env.PUBLIC_URL + "/HomeButtonActive.svg"}
                     />
                   )}
@@ -109,7 +110,7 @@ export const MenuAppBar = observer(() => {
                   {" "}
                   {index === 2 && (
                     <img
-                      style={{ marginLeft: "10px" }}
+                      style={{ marginLeft: "10px", marginTop: '10px' }}
                       src={process.env.PUBLIC_URL + "/Marketplace.svg"}
                     />
                   )}
@@ -118,7 +119,7 @@ export const MenuAppBar = observer(() => {
                   {" "}
                   {index === 3 && (
                     <img
-                      style={{ marginLeft: "10px" }}
+                      style={{ marginLeft: "10px", marginTop: '20px' }}
                       src={process.env.PUBLIC_URL + "/Blog.svg"}
                     />
                   )}
@@ -127,7 +128,7 @@ export const MenuAppBar = observer(() => {
                   {" "}
                   {index === 4 && (
                     <img
-                      style={{ marginLeft: "10px" }}
+                      style={{ marginLeft: "10px", marginTop: '20px' }}
                       src={process.env.PUBLIC_URL + "/Cursos.svg"}
                     />
                   )}
@@ -136,7 +137,7 @@ export const MenuAppBar = observer(() => {
                   {" "}
                   {index === 5 && (
                     <img
-                      style={{ marginLeft: "10px" }}
+                      style={{ marginLeft: "10px", marginTop: '20px' }}
                       src={process.env.PUBLIC_URL + "/Mais.svg"}
                     />
                   )}
@@ -266,7 +267,7 @@ export const MenuAppBar = observer(() => {
                 await authStore.login(state.email, state.senha)
                 setTimeout(() => {
                   modalClose()
-                }, 7000);
+                }, 1000);
               
           } 
           }>

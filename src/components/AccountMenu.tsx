@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import IconButton from '@mui/material/IconButton';
 import { useAuthStore } from "../StoresContext";
+import { Link } from 'react-router-dom';
 export default function AccountMenu() {
     const authStore = useAuthStore()
     console.log(authStore.currentUser.foto)
@@ -76,7 +77,8 @@ export default function AccountMenu() {
             open={Boolean(anchorEl)}
             onClose={handleClose}
         >
-             <MenuItem onClick={handleClose}>Minha Conta</MenuItem>
+             <MenuItem onClick={() => {}}>
+             <Link to={`/users/${authStore.currentUser.id}`}>Minha Conta</Link></MenuItem>
             <MenuItem onClick={() => handleLogOut()}>Logout</MenuItem>
            
         </Menu>
