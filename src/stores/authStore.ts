@@ -5,7 +5,7 @@ import React from "react"
 
 
 const api = axios.create({
-    baseURL: "http://192.168.15.75:8000",
+    baseURL: "localhost:8000",
 
   });
 
