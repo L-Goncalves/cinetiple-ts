@@ -1,8 +1,5 @@
-import { makeAutoObservable, autorun, runInAction, reaction, makeObservable, observable, action, computed } from "mobx"
+import { makeObservable, observable, action, computed } from "mobx"
 import axios from "axios"
-import React from "react"
-
-
 
 const api = axios.create({
     baseURL: "localhost:8000",  
