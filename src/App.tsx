@@ -1,44 +1,14 @@
-import React, { ReactElement } from 'react';
-import Home from './pages/Home'
-import EditProfile from './pages/EditProfile'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import React from 'react';
+import './app.scss';
 
-
-
-
-
-import './App.css';
-import { useObserver } from 'mobx-react';
-
-
-function App(): JSX.Element{
-
-  
-
-  return useObserver( () => (
-    
-    <>
-    
-      <Router>
-       <Switch>
-          <Route path="/sobre">
-            <Home />
-          </Route>
-          <Route path="/users/:id">
-            <EditProfile/>
-          </Route>
-          <Route path="/">
-          <Home />
-          </Route>
-        </Switch>
-        </Router>
-  </>
-  ));
+const App = () => {
+    return (
+        <div className="container">
+            <div className="header">
+                <h1>Welcome to React application</h1>
+            </div>
+        </div>
+    )
 }
 
-export default App;
+export default App
