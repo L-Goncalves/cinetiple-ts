@@ -6,7 +6,7 @@ export const Hamburger = () => {
   <div className="navigation">
     {<div className='line_container'>
       {[ 'line_first',  'line_second',  'line_third'].map( (item, index) => {
-        return <div className={item}></div>;
+        return <div  className={item}></div>;
      })}
     </div>}
   </div> )
@@ -17,7 +17,7 @@ export const Navbar = () => {
   <>
   <nav className="navbar">
         <div className='navbar_logo'>
-            <img src={process.env.PUBLIC_URL + "/Logo.svg"} />
+            <img alt='Cinetiple Logo' src={process.env.PUBLIC_URL + "/Logo.svg"} />
         </div>
         <SearchField/>
         <SignInSignUp/>
@@ -41,7 +41,7 @@ const SearchField = () => {
     return (
     <div className='navbar_search'>
       <input placeholder='Pesquisar' className='navbar_search_input' type={'text'}/>
-      <img className='navbar_search_svg' src={process.env.PUBLIC_URL + "/Search.svg"}/>
+      <img className='navbar_search_svg' alt='Search Field' src={process.env.PUBLIC_URL + "/Search.svg"}/>
     </div>)
 }
 
@@ -99,6 +99,7 @@ const Icon = ({url, customStyle}) => {
   return ( 
   <div className='sidebar_icon' >
  <img style={customStyle}
+  alt={url}
   src={process.env.PUBLIC_URL + url}
   />
   </div>

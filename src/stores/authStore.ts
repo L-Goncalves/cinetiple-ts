@@ -1,6 +1,5 @@
-import { makeAutoObservable, autorun, runInAction, reaction, makeObservable, observable, action, computed } from "mobx"
+import { makeObservable, observable, action, computed } from "mobx"
 import axios from "axios"
-import React from "react"
 
 
 
@@ -49,7 +48,7 @@ const api = axios.create({
 
            
             if(result.data.error){
-                throw ({error: result.data.error})
+                throw new Error (result.data.error)
             }
            this.setUser(result.data)
            this.setAuth(true)

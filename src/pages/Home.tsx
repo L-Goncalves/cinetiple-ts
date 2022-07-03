@@ -1,21 +1,17 @@
 
-import React, { ReactElement } from 'react';
+import React from 'react';
 import useWindowDimensions from '../config/getDimensions';
 import background from '../public/fundo.png'
 import { Typography } from '@mui/material';
-import { AuthStoreImpl } from '../stores/authStore';
-
 import { useAuthStore } from '../StoresContext';
 import { NavbarWithSidebar } from '../components/NavHeader';
 import { LatestNews } from '../components/LatestNews';
-interface Props {
-  authStore: AuthStoreImpl;
-}
+
 
 
 function Home(): any{
-  const { height, width } = useWindowDimensions();
-  const openModal = true
+  const { width } = useWindowDimensions();
+
   const authStore = useAuthStore()
 
   // authStore.login();
