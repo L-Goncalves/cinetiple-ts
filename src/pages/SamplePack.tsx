@@ -5,6 +5,7 @@ import background from '../public/fundo.png'
 
 import { useAuthStore } from '../StoresContext';
 import { NavbarWithSidebar } from '../components/NavHeader';
+import { Product } from '../components/Product';
 
 
 
@@ -21,20 +22,12 @@ export default function SamplePack(): any{
   return (
     <>
     
-    <div style={{backgroundImage: `url('${background}')`}}/>
+    <div  style={{backgroundImage: `url('${background}')`}}/>
     
-    <div className="home-image" style={ (width < 686? {height:'auto', ...styles.image} : { height: '-webkit-fill-available',  ...styles.image })  }>
+    <div className="home-image" style={ {overflowX: 'hidden', height:'100%', ...styles.image}}>
      <NavbarWithSidebar/>
-      <div style={styles.container}>
-
-        <img alt='icesamplepack' src={process.env.PUBLIC_URL + '/icesamplepack.png'}/>       
-      </div>
-   
-
-      <div style={styles.container}>
-     
-      </div>
-     
+     <Product/>     
+        
     </div>
 
     

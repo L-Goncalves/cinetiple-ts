@@ -1,0 +1,23 @@
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_info{
+        border-color: 1px orangered;
+        background-color: orangered;
+        padding: 0px 0px 0px 10rem;
+        width: 15%;
+       &_title{
+        color: white;
+        font-weight: 800;
+        font-size: 32px;
+       }
+    }
+    &_pricing{
+        border-color: 1px orangered;
+        background-color: orangered;
+        padding: 0px 6rem;
+        width: 15%;
+    }
+}
