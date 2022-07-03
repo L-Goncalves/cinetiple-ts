@@ -69,11 +69,11 @@ const Sidebar = () => {
         <Icon customStyle={{marginLeft: "2px", marginTop: '40px' }} url='/HomeActive.svg'/>
       </Link>
 
-      <Link to={'/Marketplace'}>
+      <Link to={'/users/210j3129083j'}>
         <Icon customStyle={{marginLeft: "14px", marginTop: '14px' }} url='/Marketplace.svg'/>
       </Link>
    
-      <Link to={"/Blog"}>
+      <Link to={"/samplepack/d9812389132"}>
       <Icon customStyle={{marginLeft: "14px", marginTop: '14px' }}url='/Blog.svg'/>
       </Link>
       <Link to={"/Cursos"}>
@@ -98,7 +98,7 @@ const Icon = ({url, customStyle}) => {
   console.log(url)
   return ( 
   <div className='sidebar_icon' >
- <img style={customStyle}
+  <img color='#0000' style={customStyle}
   alt={url}
   src={process.env.PUBLIC_URL + url}
   />

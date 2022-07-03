@@ -1,11 +1,9 @@
-
-import React from 'react';
 import useWindowDimensions from '../config/getDimensions';
 import background from '../public/fundo.png'
 
 import { useAuthStore } from '../StoresContext';
 import { NavbarWithSidebar } from '../components/NavHeader';
-import { Product } from '../components/Product';
+import { ProductDetailsAndPayment } from '../components/Product';
 
 
 
@@ -26,7 +24,8 @@ export default function SamplePack(): any{
     
     <div className="home-image" style={ {overflowX: 'hidden', height:'100%', ...styles.image}}>
      <NavbarWithSidebar/>
-     <Product/>     
+     <ProductDetailsAndPayment/>
+     
         
     </div>
 
