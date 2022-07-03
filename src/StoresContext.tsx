@@ -1,4 +1,4 @@
-import { useLocalObservable, useLocalStore } from 'mobx-react'
+import { useLocalStore } from 'mobx-react'
 import React from 'react'
 import { AuthStoreImpl } from './stores/authStore'
 

@@ -1,6 +1,5 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import useWindowDimensions from "../config/getDimensions";
-import { MenuAppBar } from "../components/NavbarElements";
 import background from "../public/fundo.png";
 import { TextField, Typography } from "@mui/material";
 import { AuthStoreImpl } from "../stores/authStore";
@@ -53,7 +52,7 @@ export const EditProfile = observer( () => {
         }
       >
         <header className="teste">
-          <MenuAppBar />
+         
         </header>
 
 

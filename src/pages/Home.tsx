@@ -1,7 +1,6 @@
 
 import React, { ReactElement } from 'react';
 import useWindowDimensions from '../config/getDimensions';
-import {MenuAppBar}  from '../components/NavbarElements';
 import background from '../public/fundo.png'
 import { Typography } from '@mui/material';
 import { AuthStoreImpl } from '../stores/authStore';

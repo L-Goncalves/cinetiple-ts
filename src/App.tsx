@@ -1,11 +1,10 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import Home from './pages/Home'
 import EditProfile from './pages/EditProfile'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 

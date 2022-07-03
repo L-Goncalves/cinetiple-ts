@@ -1,7 +1,6 @@
 
 import React, { ReactElement } from 'react';
 import useWindowDimensions from '../config/getDimensions';
-import {MenuAppBar}  from '../components/NavbarElements';
 import background from '../public/fundo.png'
 import { Typography } from '@mui/material';
 import { AuthStoreImpl } from '../stores/authStore';
@@ -32,7 +31,7 @@ export default function SamplePack(): any{
     <div className="home-image" style={ (width < 686? {height:'auto', ...styles.image} : { height: '-webkit-fill-available',  ...styles.image })  }>
      <NavbarWithSidebar/>
       <div style={styles.container}>
-        
+
         <img src={process.env.PUBLIC_URL + '/icesamplepack.png'}/>       
       </div>
    
