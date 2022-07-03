@@ -14,6 +14,7 @@ import {
 
 import './App.css';
 import { useObserver } from 'mobx-react';
+import SamplePack from './pages/SamplePack';
 
 
 function App(): JSX.Element{
@@ -26,6 +27,9 @@ function App(): JSX.Element{
     
       <Router>
        <Switch>
+       <Route path='/samplepack/:id'>
+              <SamplePack/>
+          </Route>
           <Route path="/sobre">
             <Home />
           </Route>
@@ -33,8 +37,9 @@ function App(): JSX.Element{
             <EditProfile/>
           </Route>
           <Route path="/">
-          <Home />
+            <Home />
           </Route>
+         
         </Switch>
         </Router>
   </>

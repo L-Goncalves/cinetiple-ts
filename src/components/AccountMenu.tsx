@@ -1,5 +1,3 @@
-
-
 import * as React from 'react';
 import { makeStyles } from '@mui/styles';
 import MenuItem from '@mui/material/MenuItem';
@@ -8,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import { useAuthStore } from "../StoresContext";
 import { Link } from 'react-router-dom';
 export default function AccountMenu() {
+    
     const authStore = useAuthStore()
     console.log(authStore.currentUser.foto)
     const [auth, setAuth] = React.useState(false);

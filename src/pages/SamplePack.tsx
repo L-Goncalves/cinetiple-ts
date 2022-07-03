@@ -14,7 +14,7 @@ interface Props {
 }
 
 
-function Home(): any{
+export default function SamplePack(): any{
   const { height, width } = useWindowDimensions();
   const openModal = true
   const authStore = useAuthStore()
@@ -32,21 +32,15 @@ function Home(): any{
     <div className="home-image" style={ (width < 686? {height:'auto', ...styles.image} : { height: '-webkit-fill-available',  ...styles.image })  }>
      <NavbarWithSidebar/>
       <div style={styles.container}>
-        <Typography style={{fontSize: '75px', color: '#CCCCCC', marginLeft: 130, fontFamily: 'Ubuntu', lineHeight: '57px', letterSpacing: '0px', fontWeight: 800}}>
-        O site favorito dos DJs e Produtores Musicais!
-        </Typography>
-
-
         
+        <img src={process.env.PUBLIC_URL + '/icesamplepack.png'}/>       
       </div>
    
 
       <div style={styles.container}>
-      <Typography style={{fontSize: '40px', color: '#E6E6E6', marginLeft: 130,  fontFamily: 'Ubuntu', lineHeight: '50px', fontWeight: 400}}>
-      Só aqui você fica por dentro das maiores <br/>tendências do mundo do Audio Design e Produção musical!
-      </Typography>
+     
       </div>
-      <LatestNews/>
+     
     </div>
 
     
@@ -70,9 +64,6 @@ const styles = {
   
 
 }
-
-export default Home;
-
 
 
 // .topnav a {

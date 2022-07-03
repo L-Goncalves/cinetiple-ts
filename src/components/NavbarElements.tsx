@@ -20,6 +20,7 @@ import { observer } from "mobx-react";
 import { useAuthStore } from "../StoresContext";
 import CustomizedDialogs from "./CustomDialog";
 import LinearProgress from '@mui/material/LinearProgress';
+import { Hamburger, NavbarWithSidebar} from './NavHeader/index'
 interface Props {
   authStore: AuthStoreImpl;
 }
@@ -70,6 +71,38 @@ export const MenuAppBar = observer(() => {
     setState({...state, modalopen: false, loading: false})
   };
 
+
+  const Login = () => {
+    return (<>
+    {authStore.auth ? (
+            <div
+              style={{
+                alignItems: 'center',
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              <Search />
+              <Notifications/>
+              <AccountMenu />
+            </div>
+          ) : (
+            <div>
+              <div
+                style={{ display: "inline" }}
+                onClick={() => {
+                  console.log('click')
+                  setState( { ...state, modalopen: true} )
+
+                  console.log(state.modalopen)
+    
+                }}
+              >
+                {`Login`}
+              </div>
+            </div>
+          )}</>)
+  }
   
 
   const list = (anchor: Anchor) => (
@@ -115,6 +148,7 @@ export const MenuAppBar = observer(() => {
                     />
                   )}
                 </Link>
+                
                 <Link to={"/Blog"}>
                   {" "}
                   {index === 3 && (
@@ -152,134 +186,13 @@ export const MenuAppBar = observer(() => {
   );
 
   return (
-    <Box boxShadow={0} style={{ borderRight: 0 }} sx={{ flexGrow: 1 }}>
-    
-      {(["left"] as const).map((anchor) => (
-        <div>
-          <SwipeableDrawer
-            className={""}
-            variant="persistent"
-            style={{
-              backgroundColor: "rgba(0,0,0,0)",
-              zIndex: 0,
-              pointerEvents: "all",
-              borderRight: "1.5px solid #D96221",
-              outline: 0,
-            }}
-            anchor={anchor}
-            sx={{ backgroundColor: "transparent", pointerEvents: "none" }}
-            open={state.left}
-            onClose={toggleDrawer(anchor, false)}
-            onOpen={toggleDrawer(anchor, true)}
-          >
-            {list(anchor)}
-          </SwipeableDrawer>
-        </div>
-      ))}
+   <>
+    <NavbarWithSidebar/>
+ 
       {/* Appbar */}
-      <AppBar
-        position="static"
-        style={{
-          backgroundColor: "transparent",
-          backdropFilter: "blur(25px)",
-          borderBottom: "1.5px solid #D96221",
-        }}
-      >
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ ml: 5 }}
-          >
-            <MenuIcon
-              onClick={() => {
-                console.log("click");
-                setState({...state, left: true });
-              }}
-            />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml: 5 }}>
-            <img src={process.env.PUBLIC_URL + "/Logo.svg"} />
-          </Typography>
-          {authStore.auth ? (
-            <div
-              style={{
-                alignItems: 'center',
-                display: "flex",
-                flexDirection: "row",
-              }}
-            >
-              <Search />
-              <Notifications/>
-              <AccountMenu />
-            </div>
-          ) : (
-            <div>
-              <div
-                style={{ display: "inline" }}
-                onClick={() => {
-                  console.log('click')
-                  setState( { ...state, modalopen: true} )
-
-                  console.log(state.modalopen)
-    
-                }}
-              >
-                {`Login`}
-              </div>
-            </div>
-          )}
-        </Toolbar>
-      </AppBar>
-      <CustomizedDialogs open={state.modalopen} onClose={modalClose}>
-        <div style={{display: 'flex', flexDirection: 'column', width: '25vw', padding: '2rem 1rem', justifyContent: 'space-between'}}>
-        <TextField 
-            id="standard-basic"
-            label="Email" variant="standard" 
-            onChange={(e) => setState({...state, email: e.target.value})}
-            type={'email'}
-            value={state.email} />
-              {/* <input 
-
-                placeholder="email" 
-                style={{margin: '1.5rem 0', width: 300, height: 25}} 
-                
-               
-                type={'email'}/>
-          */}
-      
-          <TextField 
-            id="standard-basic"
-            label="Senha" variant="standard" 
-            onChange={(e) => setState({...state, senha: e.target.value})}
-            type={'password'}
-            value={state.senha} />
-          
-          
-          </div>
-
-          <DialogActions>
-          <Button autoFocus onClick={ async () => {
-               
-                setState({...state, loading: true})
-                await authStore.login(state.email, state.senha)
-                setTimeout(() => {
-                  modalClose()
-                }, 1000);
-              
-          } 
-          }>
-            Entrar
-          </Button>
-        </DialogActions>
-
-        {authStore.error.error && <Alert severity="error">{`${authStore.error.error}`}</Alert>}
-
-        { ( state.loading && !authStore.error.error) &&  <LinearProgress color="inherit" style={{backgroundColor: '#D96221'}} />}
-      </CustomizedDialogs>
-    </Box>
+     
+   
+    </>
     
   );
 })
