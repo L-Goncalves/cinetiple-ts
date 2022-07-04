@@ -34,9 +34,22 @@ $drawer-width: 80vw;
     background: transparent;
     padding: 30px 0px;
     border-right: 1px solid orangered;
+    transition: all 0.25s;
     &_closed{
         position: absolute;
-        top: 30px;
+        top: 0;
+        height: 94%;
+        width: 100px;
+        background: transparent;
+        padding: 30px 0px;
+        border-right: 1px solid orangered;
+        transition: all 0.25s;
+
+  
+        transition: all 0.25s;
+        margin-left:-102px;
+        position: absolute;
+      
     }
   
 
@@ -45,6 +58,12 @@ $drawer-width: 80vw;
         border: 0;
         margin-top: 10px;
         margin-left: 15px;
+        &_closed{
+            background-color: transparent;
+            border: 0;
+            margin-top: 10px;
+            margin-left: 120px;
+        }
     }
     &_icon{
         width: 40px;

@@ -60,9 +60,9 @@ const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   console.log(sidebarOpen)
   return (
-    sidebarOpen ? (
-    <div className={'sidebar'}>
-      <button onClick={ () => setSidebarOpen(!sidebarOpen)} className="sidebar_button">
+    
+    <div className={ sidebarOpen? 'sidebar': 'sidebar_closed'}>
+      <button onClick={ () => setSidebarOpen(!sidebarOpen)} className={sidebarOpen? 'sidebar_button': 'sidebar_button_closed'}>
         <Hamburger/>
       </button>
       <Link to={"/Home"}>
@@ -82,13 +82,7 @@ const Sidebar = () => {
       <Link to={"/Mais"}>
         <Icon customStyle={{marginLeft: "17px", marginTop: '14px' }} url='/Mais.svg'/>
       </Link>
-    </div>): (
-      <div className='sidebar_closed'>
-       <button onClick={ () => setSidebarOpen(!sidebarOpen)} className="sidebar_button">
-        <Hamburger/>
-      </button>
-        </div>
-    ))
+    </div>)
 } 
 
 
