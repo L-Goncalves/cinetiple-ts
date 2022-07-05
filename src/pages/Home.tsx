@@ -24,7 +24,7 @@ function Home(): any{
     <div  style={{backgroundImage: `url('${background}')`}}/>
     
     <div className="home-image" style={ {overflowX: 'hidden', height:'100%', ...styles.image}}>
-     <NavbarWithSidebar/>
+    
       <div style={styles.container}>
         <Typography style={{fontSize: '75px', color: '#CCCCCC', marginLeft: 130, fontFamily: 'Ubuntu', lineHeight: '57px', letterSpacing: '0px', fontWeight: 800}}>
         O site favorito dos DJs e Produtores Musicais!

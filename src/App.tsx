@@ -13,6 +13,7 @@ import {
 import './App.css';
 import { useObserver } from 'mobx-react';
 import SamplePack from './pages/SamplePack';
+import { NavbarWithSidebar } from './components/NavHeader';
 
 
 function App(): JSX.Element{
@@ -24,8 +25,12 @@ function App(): JSX.Element{
     <>
     
       <Router>
+      <NavbarWithSidebar/>
        <Switch>
+     
+
        <Route path='/samplepack/:id'>
+     
               <SamplePack/>
           </Route>
           <Route path="/sobre">
