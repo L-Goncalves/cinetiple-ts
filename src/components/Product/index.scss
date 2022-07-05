@@ -25,10 +25,10 @@
 
     &_container{
         display: flex;
-        border-color: 1px orangered;
+ 
         background-color: transparent;
         backdrop-filter: blur(20px);
-        border: 1px solid rgb(255, 68, 0);
+        border: 0.5px solid rgb(255, 68, 0);
         color: white;
         margin-top: 35px;
         border-radius: 5px;
@@ -38,14 +38,28 @@
     
         
         height: 50%;
-        border-color: 1px orangered;
-        
         backdrop-filter: blur(20px);
-   
         padding: 0px 6rem;
         &_title{
             color: #DD2630;
         }
+
+        &_cart{
+            color: #D96221;
+            text-align: center;
+        }
+        &_button{
+          
+            width: 13rem;
+            height: 4rem;
+            border-radius: 10px;
+            border: 0px;
+            color: white;
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #DD2630 0.02%, #D96221 100%);
+        }
+
+      
     }
 
     &_tags{
@@ -109,5 +123,7 @@
         font-weight: 500;
         color: #999999;
     }
+
+   
   }
 

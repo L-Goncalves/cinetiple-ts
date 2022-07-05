@@ -86,8 +86,8 @@ const PricingDetails = () => {
 
       <p>EM 6X R$ 6,65 SEM JUROS</p>
       <p>MÉTODOS DE PAGAMENTO</p>
-      <button>Comprar</button>
-      <p>Adicionar ao Carrinho</p>
+      <button className="product_details_pricing_button">Comprar</button>
+      <p className="product_details_pricing_cart">Adicionar ao Carrinho</p>
     </>
   );
 };
