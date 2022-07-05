@@ -1,8 +1,6 @@
 import useWindowDimensions from '../config/getDimensions';
 import background from '../public/fundo.png'
-
 import { useAuthStore } from '../StoresContext';
-import { NavbarWithSidebar } from '../components/NavHeader';
 import { ProductDetailsAndPayment } from '../components/Product';
 
 

@@ -4,7 +4,6 @@ import useWindowDimensions from '../config/getDimensions';
 import background from '../public/fundo.png'
 import { Typography } from '@mui/material';
 import { useAuthStore } from '../StoresContext';
-import { NavbarWithSidebar } from '../components/NavHeader';
 import { LatestNews } from '../components/LatestNews';
 
 
