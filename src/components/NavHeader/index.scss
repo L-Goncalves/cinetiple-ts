@@ -76,6 +76,7 @@ $drawer-width: 80vw;
 .navbar{
     z-index: -1;
     width: 100%;
+    max-width: 2017px;
     backdrop-filter: blur(15px);
     gap: 40px;
     flex-direction: row;
@@ -84,6 +85,7 @@ $drawer-width: 80vw;
     padding: 30px 50px;
     flex-wrap: wrap;
     border-bottom: 1px solid orangered;
+    background-image: url(/public/fundo.png), linear-gradient(45deg, rgb(15, 15, 26) 0%, rgb(19, 19, 38) 100%);
 
    &_logo{
     justify-self: flex-start;
