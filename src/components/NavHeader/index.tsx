@@ -1,11 +1,12 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import './index.scss'
 import { Link } from "react-router-dom";
+import {Blog, Home, Cursos, Marketplace} from '../../assets/svg/index'
 export const Hamburger = () => {
   return (
   <div className="navigation">
     {<div className='line_container'>
-      {[ 'line_first',  'line_second',  'line_third'].map( (item, index) => {
+      {[ 'line_first',  'line_second',  'line_third'].map( (item) => {
         return <div  className={item}></div>;
      })}
     </div>}
@@ -58,29 +59,39 @@ const SignInSignUp = () => {
 const Sidebar = () => {
 
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  console.log(sidebarOpen)
+  const [tabActive, SetTabActive] = useState('Home')
   return (
     
     <div className={ sidebarOpen? 'sidebar': 'sidebar_closed'}>
       <button onClick={ () => setSidebarOpen(!sidebarOpen)} className={sidebarOpen? 'sidebar_button': 'sidebar_button_closed'}>
         <Hamburger/>
       </button>
-      <Link to={"/Home"}>
-        <Icon customStyle={{marginLeft: "2px", marginTop: '40px' }} url='/HomeActive.svg'/>
+      <Link to={"/Home"} onClick={ () => {SetTabActive('Home')}}>
+          <Home fill='#FFF' className='sidebar_icon' style={{marginLeft: "25px", marginTop: '30px'}}/>
       </Link>
 
-      <Link to={'/users/210j3129083j'}>
-        <Icon customStyle={{marginLeft: "14px", marginTop: '14px' }} url='/Marketplace.svg'/>
+      <Link to={'/users/210j3129083j'} onClick={ () => {SetTabActive('Marketplace')}}>
+          {tabActive.includes('Marketplace') ? 
+          (<Marketplace fill={'orangered'} className='sidebar_icon' style={{marginLeft: "25px", marginTop: '20px'}}/>):
+          (<Marketplace fill={'#FFF'} className='sidebar_icon' style={{marginLeft: "25px", marginTop: '20px'}}/>)
+          }
+          
       </Link>
    
-      <Link to={"/samplepack/d9812389132"}>
-      <Icon customStyle={{marginLeft: "14px", marginTop: '14px' }}url='/Blog.svg'/>
+      <Link to={"/samplepack/d9812389132"} onClick={ () => {SetTabActive('Blog')}}>
+      {tabActive.includes('Blog') ? 
+          (<Blog fill={'orangered'} className='sidebar_icon' style={{marginLeft: "25px", marginTop: '30px'}}/>):
+          (<Blog fill={'#FFF'} className='sidebar_icon' style={{marginLeft: "25px", marginTop: '30px'}}/>)
+          }
       </Link>
-      <Link to={"/Cursos"}>
-      <Icon customStyle={{marginLeft: "14px", marginTop: '14px' }} url='/Cursos.svg'/>
+      <Link to={"/Cursos"} onClick={ () => {SetTabActive('Cursos')}}>
+      {tabActive.includes('Cursos') ? 
+          (<Cursos fill={'orangered'} className='sidebar_icon' style={{marginLeft: "25px", marginTop: '30px'}}/>):
+          (<Cursos fill={'#FFF'} className='sidebar_icon' style={{marginLeft: "25px", marginTop: '30px'}}/>)
+          }
       </Link>
-      <Link to={"/Mais"}>
-        <Icon customStyle={{marginLeft: "17px", marginTop: '14px' }} url='/Mais.svg'/>
+      <Link to={"/Mais"} onClick={ () => {SetTabActive('Mais')}}>
+        <Icon  customStyle={{marginLeft: "17px", marginTop: '14px' }} url='/Mais.svg'/>
       </Link>
     </div>)
 } 
@@ -89,6 +100,9 @@ const Sidebar = () => {
 
 
 const Icon = ({url, customStyle}) => {
+
+  
+
   console.log(url)
   return ( 
   <div className='sidebar_icon' >
@@ -100,6 +114,7 @@ const Icon = ({url, customStyle}) => {
  )
  
 }
+
 
 /*
 */

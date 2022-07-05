@@ -63,6 +63,18 @@
             border-radius: 5px;
         }
     }
+
+    &_showcase{
+        backdrop-filter: blur(20px);
+        border: 1px solid orangered;
+        background-color: transparent;
+        &_title{
+            color: white;
+            font-size: 2.0rem;
+            text-align: center;
+            justify-content: center;
+        }
+    }
 }
 
 .container {

@@ -3,12 +3,18 @@ import "./index.scss";
 export const ProductDetailsAndPayment = () => {
   return (
     <div className="product_details">
+      <div>
       <img
         className="product_details_image"
         alt="icesamplepack"
         src={process.env.PUBLIC_URL + "/icesamplepack.png"}
       />
-
+      <Showcase/>
+      </div>
+     
+     <div>
+      
+     </div>
       <div className="product_details_container">
         <div className="product_details_info">
           <ProductDetails />
@@ -64,6 +70,13 @@ const ProductDetails = () => {
     </>
   );
 };
+
+const Showcase = () => {
+  return (<div className="product_details_showcase">
+
+    <h3 className="product_details_showcase_title">Amostras</h3>
+  </div>)
+}
 
 const PricingDetails = () => {
   return (
