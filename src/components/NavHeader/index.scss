@@ -36,7 +36,7 @@ $drawer-width: 80vw;
     border-right: 1px solid orangered;
     transition: all 0.25s;
     &_closed{
-        position: absolute;
+    
         top: 0;
         height: 94%;
         width: 100px;
@@ -88,7 +88,7 @@ $drawer-width: 80vw;
     padding: 30px 50px;
     flex-wrap: wrap;
     border-bottom: 1px solid orangered;
-    background-image: url(/public/fundo.png), linear-gradient(30deg, #0F0F1A 0.00%, #131326 100.00%);
+    background-image: url(/assets/images/fundo.png), linear-gradient(30deg, #0F0F1A 0.00%, #131326 100.00%);
 
    &_logo{
     justify-self: flex-start;

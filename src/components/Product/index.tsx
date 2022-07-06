@@ -1,4 +1,5 @@
 import "./index.scss";
+import samplepack from '../../assets/images/icesamplepack.png'
 
 export const ProductDetailsAndPayment = () => {
   return (
@@ -7,7 +8,7 @@ export const ProductDetailsAndPayment = () => {
       <img
         className="product_details_image"
         alt="icesamplepack"
-        src={process.env.PUBLIC_URL + "/icesamplepack.png"}
+        src={samplepack}
       />
       <Showcase/>
       </div>
