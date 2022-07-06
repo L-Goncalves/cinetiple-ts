@@ -90,30 +90,12 @@ const Sidebar = () => {
           (<Cursos fill={'#FFF'} className='sidebar_icon' style={{marginLeft: "25px", marginTop: '30px'}}/>)
           }
       </Link>
-      <Link to={"/Mais"} onClick={ () => {SetTabActive('Mais')}}>
-        <Icon  customStyle={{marginLeft: "17px", marginTop: '14px' }} url='/Mais.svg'/>
-      </Link>
+
     </div>)
 } 
 
 
 
-
-const Icon = ({url, customStyle}) => {
-
-  
-
-  console.log(url)
-  return ( 
-  <div className='sidebar_icon' >
-  <img color='#0000' style={customStyle}
-  alt={url}
-  src={process.env.PUBLIC_URL + url}
-  />
-  </div>
- )
- 
-}
 
 
 /*

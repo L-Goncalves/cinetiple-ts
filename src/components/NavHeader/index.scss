@@ -27,7 +27,7 @@ $drawer-width: 80vw;
 }
 
 .sidebar{
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 94%;
     width: 100px;
@@ -57,8 +57,10 @@ $drawer-width: 80vw;
         background-color: transparent;
         border: 0;
         margin-top: 10px;
+        cursor: pointer;
         margin-left: 15px;
         &_closed{
+            cursor: pointer;
             background-color: transparent;
             border: 0;
             margin-top: 10px;
@@ -74,6 +76,7 @@ $drawer-width: 80vw;
 
 
 .navbar{
+    
     z-index: -1;
     width: 100%;
     max-width: 2017px;
@@ -85,7 +88,7 @@ $drawer-width: 80vw;
     padding: 30px 50px;
     flex-wrap: wrap;
     border-bottom: 1px solid orangered;
-    background-image: url(/public/fundo.png), linear-gradient(45deg, rgb(15, 15, 26) 0%, rgb(19, 19, 38) 100%);
+    background-image: url(/public/fundo.png), linear-gradient(30deg, #0F0F1A 0.00%, #131326 100.00%);
 
    &_logo{
     justify-self: flex-start;
@@ -107,6 +110,7 @@ $drawer-width: 80vw;
     &_svg{
         z-index: 2;
         margin-left: -30px;
+        cursor: pointer;
     }
        margin: 0 0 0rem 60rem;
    }
@@ -122,6 +126,7 @@ $drawer-width: 80vw;
     &_sign_up{
         color: white;
         font-weight: 600;
+        cursor: pointer;
     }
 
     &_slash{
@@ -134,6 +139,7 @@ $drawer-width: 80vw;
     }
 
     &_login{
+        cursor: pointer;
         background-color: #DD2630;
         width: 6rem;
         color: white;
