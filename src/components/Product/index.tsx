@@ -1,6 +1,7 @@
 import "./index.scss";
 import samplepack from '../../assets/images/icesamplepack.png'
 import { Soundplayer } from '../Soundplayer'
+import { Mastercard, Maestro, Boleto } from "../../assets/svg";
 
 
 export const ProductDetailsAndPayment = () => {
@@ -95,8 +96,15 @@ const PricingDetails = () => {
 
       <p>EM 6X R$ 6,65 SEM JUROS</p>
       <p>MÉTODOS DE PAGAMENTO</p>
+      <div>
+        <Mastercard/>
+        <Maestro/>
+        <Boleto/>
+      </div>
+
+    
       <button className="product_details_pricing_button">Comprar</button>
-      <p className="product_details_pricing_cart">Adicionar ao Carrinho</p>
+      <p className="product_details_pricing_cart">ADICIONAR AO CARRINHO</p>
     </>
   );
 };
