@@ -11,10 +11,25 @@ html{
   overflow-x: hidden;
 }
 
-.home-image{
-  height: -webkit-fill-available;
-  background-size: contain;
+
+@media (min-height: 949px)
+{
+  .home-image
+   {
+    height: 100vh
+   }
 }
+
+@media (max-height: 949px)
+{
+  .home-image{
+    height: -webkit-fill-available;
+    background-size: contain;
+  
+    
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

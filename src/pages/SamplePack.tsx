@@ -20,7 +20,7 @@ export default function SamplePack(): any{
     
     <div  style={{backgroundImage: `url('${background}')`}}/>
     
-    <div className="home-image" style={ {overflowX: 'hidden', height:'100%', ...styles.image}}>
+    <div className="home-image" style={ {overflowX: 'hidden', ...styles.image}}>
 
      <ProductDetailsAndPayment/>
      
