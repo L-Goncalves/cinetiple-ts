@@ -1,4 +1,8 @@
 import "./index.scss";
+import samplepack from '../../assets/images/icesamplepack.png'
+import { Soundplayer } from '../Soundplayer'
+import { Mastercard, Maestro, Boleto, Logo } from "../../assets/svg";
+
 
 export const ProductDetailsAndPayment = () => {
   return (
@@ -7,7 +11,7 @@ export const ProductDetailsAndPayment = () => {
       <img
         className="product_details_image"
         alt="icesamplepack"
-        src={process.env.PUBLIC_URL + "/icesamplepack.png"}
+        src={samplepack}
       />
       <Showcase/>
       </div>
@@ -58,7 +62,9 @@ const ProductDetails = () => {
   return (
     <>
       <p className="product_details_info_title">ICE</p>
-      <p>Produtor: CInetiple</p>
+      <p>Produtor: 
+        <Logo width={60} height={14}/> 
+       </p>
       <br />
       <p>Descrição</p>
       <p>
@@ -75,6 +81,12 @@ const Showcase = () => {
   return (<div className="product_details_showcase">
 
     <h3 className="product_details_showcase_title">Amostras</h3>
+    <div className="product_details_showcase_list">
+        <Soundplayer/>
+        <Soundplayer/>
+        <Soundplayer/>
+
+    </div>
   </div>)
 }
 
@@ -86,8 +98,15 @@ const PricingDetails = () => {
 
       <p>EM 6X R$ 6,65 SEM JUROS</p>
       <p>MÉTODOS DE PAGAMENTO</p>
+      <div>
+        <Mastercard/>
+        <Maestro/>
+        <Boleto/>
+      </div>
+
+    
       <button className="product_details_pricing_button">Comprar</button>
-      <p className="product_details_pricing_cart">Adicionar ao Carrinho</p>
+      <p className="product_details_pricing_cart">ADICIONAR AO CARRINHO</p>
     </>
   );
 };

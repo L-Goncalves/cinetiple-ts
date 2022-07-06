@@ -1,5 +1,5 @@
 import useWindowDimensions from '../config/getDimensions';
-import background from '../public/fundo.png'
+import background from '../assets/images/fundo.png'
 import { useAuthStore } from '../StoresContext';
 import { ProductDetailsAndPayment } from '../components/Product';
 

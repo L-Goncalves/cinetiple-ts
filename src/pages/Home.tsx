@@ -1,9 +1,10 @@
 
 import React from 'react';
 import useWindowDimensions from '../config/getDimensions';
-import background from '../public/fundo.png'
+import background from '../assets/images/fundo.png'
 import { Typography } from '@mui/material';
 import { useAuthStore } from '../StoresContext';
+
 import { LatestNews } from '../components/LatestNews';
 
 
