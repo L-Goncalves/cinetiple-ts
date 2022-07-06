@@ -81,7 +81,7 @@
 
     &_showcase{
         backdrop-filter: blur(20px);
-        border: 1px solid orangered;
+       
         background-color: transparent;
         &_title{
             color: white;
@@ -89,6 +89,11 @@
             text-align: center;
             justify-content: center;
         }
+        &_list{
+            text-align: center;
+        }
+
+    
     }
 }
 

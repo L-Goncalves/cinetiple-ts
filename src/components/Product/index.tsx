@@ -1,5 +1,7 @@
 import "./index.scss";
 import samplepack from '../../assets/images/icesamplepack.png'
+import { Soundplayer } from '../Soundplayer'
+
 
 export const ProductDetailsAndPayment = () => {
   return (
@@ -76,6 +78,12 @@ const Showcase = () => {
   return (<div className="product_details_showcase">
 
     <h3 className="product_details_showcase_title">Amostras</h3>
+    <div className="product_details_showcase_list">
+        <Soundplayer/>
+        <Soundplayer/>
+        <Soundplayer/>
+
+    </div>
   </div>)
 }
 
