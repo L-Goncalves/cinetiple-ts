@@ -1,8 +1,6 @@
 import useWindowDimensions from '../config/getDimensions';
-import background from '../public/fundo.png'
-
+import background from '../assets/images/fundo.png'
 import { useAuthStore } from '../StoresContext';
-import { NavbarWithSidebar } from '../components/NavHeader';
 import { ProductDetailsAndPayment } from '../components/Product';
 
 
@@ -23,7 +21,7 @@ export default function SamplePack(): any{
     <div  style={{backgroundImage: `url('${background}')`}}/>
     
     <div className="home-image" style={ {overflowX: 'hidden', height:'100%', ...styles.image}}>
-     <NavbarWithSidebar/>
+
      <ProductDetailsAndPayment/>
      
         

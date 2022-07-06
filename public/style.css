@@ -7,6 +7,3 @@ html,body
     overflow-x: hidden; 
 }
 
-.teste  *:not(.test2) {
-    border-right: 0 !important;
-}

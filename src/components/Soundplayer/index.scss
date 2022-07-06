@@ -1,0 +1,39 @@
+.soundplayer{
+    display: flex;
+    padding: 0 1rem;
+    width: 80%;
+    margin: 1rem auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 6rem;
+    background-color: rgba(255, 255, 255, 0.05);
+
+
+    &_play{
+        align-self: center;
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    &_soundtrack{
+        width: 80%;
+
+        font-weight: 700;
+        
+
+        &_title{
+            margin: 20px 0px;
+            justify-self: flex-start;
+            color: white;
+        }
+
+        &_track{
+            margin-top: 27px;
+            background-color: rgba(255, 255, 255, 0.15);;
+            width: 100%;
+            padding: 0px 0px;
+            height: 4px;
+            border-radius: 25px;
+        }
+    }
+}
