@@ -1,7 +1,7 @@
 import "./index.scss";
 import samplepack from '../../assets/images/icesamplepack.png'
 import { Soundplayer } from '../Soundplayer'
-import { Mastercard, Maestro, Boleto } from "../../assets/svg";
+import { Mastercard, Maestro, Boleto, Logo } from "../../assets/svg";
 
 
 export const ProductDetailsAndPayment = () => {
@@ -62,7 +62,9 @@ const ProductDetails = () => {
   return (
     <>
       <p className="product_details_info_title">ICE</p>
-      <p>Produtor: CInetiple</p>
+      <p>Produtor: 
+        <Logo width={60} height={14}/> 
+       </p>
       <br />
       <p>Descrição</p>
       <p>

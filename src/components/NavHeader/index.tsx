@@ -67,7 +67,11 @@ const Sidebar = () => {
         <Hamburger/>
       </button>
       <Link to={"/Home"} onClick={ () => {SetTabActive('Home')}}>
-          <Home fill='#FFF' className='sidebar_icon' style={{marginLeft: "25px", marginTop: '30px'}}/>
+         
+          {tabActive.includes('Home') ? 
+          ( <Home fill={'orangered'} className='sidebar_icon' style={{marginLeft: "23px", marginTop: '30px'}}/>):
+          ( <Home fill={'#FFF'} className='sidebar_icon' style={{marginLeft: "23px", marginTop: '30px'}}/>)
+          }
       </Link>
 
       <Link to={'/users/210j3129083j'} onClick={ () => {SetTabActive('Marketplace')}}>
