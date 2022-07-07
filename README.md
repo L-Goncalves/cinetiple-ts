@@ -1,7 +1,7 @@
 # Netiple 🎶
 
 <h4 align="center"> 
-	⚠  Netiple| Em Desenvolvimento ⚠
+	⚠  Netiple  Em Desenvolvimento ⚠
 </h4>
 
 Preview: https://netiple.netlify.app/
