@@ -1,6 +1,6 @@
 import "./index.scss";
 import samplepack from '../../assets/images/icesamplepack.png'
-import { Soundplayer } from '../Soundplayer'
+import MultiPlayer from '../Soundplayer'
 import { Mastercard, Maestro, Boleto, Logo } from "../../assets/svg";
 
 
@@ -82,9 +82,12 @@ const Showcase = () => {
 
     <h3 className="product_details_showcase_title">Amostras</h3>
     <div className="product_details_showcase_list">
-        <Soundplayer/>
-        <Soundplayer/>
-        <Soundplayer/>
+        <MultiPlayer urls={[
+          '../../assets/sound/test.wav',
+          'https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3',
+          'https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3',
+        ]}/>
+ 
 
     </div>
   </div>)
