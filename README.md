@@ -14,6 +14,7 @@ Preview: https://netiple.netlify.app/
 - [ ] Player de aúdio  ⚠ 
 - [ ] Responsividade   ⚠ 
 - [ ] Criação de Conta ⚠ 
+- [ ] Marketplace ⚠ 
 - [ ] Blog ⚠ 
 - [ ] Compras com Stripe ⚠ 
 
