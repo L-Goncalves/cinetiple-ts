@@ -1,7 +1,7 @@
 import "./index.scss";
 import samplepack from '../../assets/images/icesamplepack.png'
 import MultiPlayer from '../Soundplayer'
-import { Mastercard, Maestro, Boleto, Logo } from "../../assets/svg";
+import { Mastercard, Maestro, Boleto, Logo, Visa, Paypal, AmericanExpress } from "../../assets/svg";
 
 
 export const ProductDetailsAndPayment = () => {
@@ -50,6 +50,7 @@ export const Tags = () => {
           "Cymbals",
           "Kicks",
           "Snares",
+          "Snares"
         ].map((item) => {
           return <div className="product_details_tags_card">{item}</div>;
         })}
@@ -101,11 +102,15 @@ const PricingDetails = () => {
 
       <p>EM 6X R$ 6,65 SEM JUROS</p>
       <p>MÉTODOS DE PAGAMENTO</p>
-      <div>
-        <Mastercard/>
-        <Maestro/>
-        <Boleto/>
-      </div>
+      <div className="cardbrands_container">
+        <Mastercard className="cardbrands_container_cardbrand"/>
+        <Maestro className="cardbrands_container_cardbrand"/>
+        <Visa className="cardbrands_container_cardbrand"/>
+        <Paypal className="cardbrands_container_cardbrand"/>
+        <AmericanExpress className="cardbrands_container_cardbrand"/>
+        <Boleto fill="white" className="cardbrands_container_cardbrand"/>
+       
+   </div>
 
     
       <button className="product_details_pricing_button">Comprar</button>

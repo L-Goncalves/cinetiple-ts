@@ -61,6 +61,7 @@
             background: linear-gradient(45deg, #DD2630 0.02%, #D96221 100%);
         }
 
+
       
     }
 
@@ -131,6 +132,21 @@
         color: #999999;
     }
 
+
+   
    
   }
 
+
+  .cardbrands{
+    &_container{
+        max-width: 215px;
+        margin: 20px 0px;
+        &_cardbrand{
+            margin: 0 4px;
+        }
+    }
+   
+  
+   
+}

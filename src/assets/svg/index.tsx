@@ -9,5 +9,6 @@ export {ReactComponent as Visa } from "./Visa.svg"
 export {ReactComponent as Boleto } from "./Boleto.svg"
 export {ReactComponent as Logo } from "./Logo.svg"
 export {ReactComponent as Pause} from "./Pause.svg";
-
+export {ReactComponent as Paypal} from "./Paypal.svg";
+export {ReactComponent as AmericanExpress} from "./AmericanExpress.svg";
 
