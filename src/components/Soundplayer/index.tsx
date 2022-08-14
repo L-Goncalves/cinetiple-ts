@@ -32,7 +32,6 @@ const useMultiAudio = urls => {
     sources.forEach((source, i) => {
       players[i].playing ? source.audio.play() : source.audio.pause()
       
-      console.log(players[i])
     })
    
   }, [sources, players])
