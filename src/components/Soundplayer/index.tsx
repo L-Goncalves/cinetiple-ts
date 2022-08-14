@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Pause, Play } from '../../assets/svg'
 import "./index.scss";
+import Slider from 'rc-slider';
+import 'rc-slider/assets/index.css';
+
 const useMultiAudio = urls => {
   const audio = new Audio(require('../../assets/sound/test.wav'))
   const [duration, setDuration] = useState(0)
@@ -69,7 +72,6 @@ const useMultiAudio = urls => {
         })
 
         source.audio.addEventListener("loadeddata", function getAudioDuration(this: any, event){
-     
           setDuration(this.duration)
         }
         );
@@ -122,14 +124,27 @@ const Player = ({ player, toggle }) => (
         <p className="soundplayer_soundtrack_title">
         CNTPL - ambience riser terror.wav
         </p>
-        <div className="soundplayer_soundtrack_trackempty"/>
-        <div className="soundplayer_soundtrack_trackfilled"/>
-        <div className="soundplayer_soundtrack_trackslider"/>
-      
-    </div>
-      
+        <Slider  defaultValue={0} step={1}
+          trackStyle={styling.track}
+          railStyle={styling.rail}
+          handleStyle={styling.handleAndDot}
+          activeDotStyle={styling.handleAndDot}
+        />
+    </div>  
 </div>
 )
 
+
+const styling = {
+    track: {
+      background: 'linear-gradient(45deg, #DD2630 0.02%, #D96221 100%)' 
+    },
+    rail: {
+      backgroundColor: 'rgba(255, 255, 255, 0.20)'
+    },
+    handleAndDot: {
+      background: '#D96221', border: 0 
+    }
+}
 
 export default MultiPlayer
