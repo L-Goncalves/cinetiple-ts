@@ -33,9 +33,9 @@
   }
 
   color: white;
-  background-color: rgba($color: #FFF, $alpha: 0.05);
+  background-color: rgba($color: #fff, $alpha: 0.05);
 
-  &_add{
+  &_add {
     background: transparent;
     color: orangered;
     border: 0;
@@ -44,4 +44,17 @@
     font-size: 16px;
     text-align: center;
   }
+
+  &_arrow {
+    align-self: center;
+    color: white;
+  }
+}
+
+.check_other_products {
+  margin: 20px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  align-self: center;
+  color: orangered;
 }

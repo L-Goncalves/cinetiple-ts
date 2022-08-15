@@ -1,4 +1,4 @@
-import { ArrowRight } from "@mui/icons-material";
+import { ArrowRight, ArrowLeft } from "@mui/icons-material";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import img from "../../assets/images/icesamplepack.png";
@@ -16,14 +16,16 @@ export const CardList = () => {
           </Typography>
         </div>
         <div className="cardlist_actual_list">
+          <ArrowLeft className="card_arrow" />
           <Card />
           <Card />
           <Card />
           <Card />
           <Card />
+          <ArrowRight className="card_arrow" />
         </div>
+        <div className="check_other_products">Ver outros produtos</div>
       </div>
-      <ArrowRight />
     </>
   );
 };
@@ -37,7 +39,7 @@ export const Card = () => {
           <Typography gutterBottom variant="h5" component="div">
             Ice Sample Pack
           </Typography>
-          <Typography variant="body2" >
+          <Typography variant="body2">
             Ultrices fames tristique quis ipsum maecenas nam ipsum mi sit.
             Commodo, praesent quam volutpat lectus mauris senectus etiam lorem
             eu.
@@ -45,9 +47,7 @@ export const Card = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <button className="card_add">
-          Adicionar ao Carrinho
-        </button>
+        <button className="card_add">Adicionar ao Carrinho</button>
       </CardActions>
     </div>
   );
