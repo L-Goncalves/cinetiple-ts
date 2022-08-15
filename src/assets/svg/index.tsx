@@ -11,3 +11,7 @@ export { ReactComponent as Logo } from "./Logo.svg";
 export { ReactComponent as Pause } from "./Pause.svg";
 export { ReactComponent as Paypal } from "./Paypal.svg";
 export { ReactComponent as AmericanExpress } from "./AmericanExpress.svg";
+export { ReactComponent as Facebook } from "./Facebook.svg";
+export { ReactComponent as Instagram } from "./Instagram.svg";
+export { ReactComponent as Twitter } from "./Twitter.svg";
+export { ReactComponent as Youtube } from "./Youtube.svg";
