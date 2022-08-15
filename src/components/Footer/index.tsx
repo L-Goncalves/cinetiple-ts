@@ -11,10 +11,10 @@ export const Footer = () => {
           src={process.env.PUBLIC_URL + "/Logo.svg"}
         />
         <div className="links">
-          <a>Terms of Service</a>
-          <a>Privacy Policy</a>
-          <a>Contact Us</a>
-          <a>About</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact Us</a>
+          <a href="#">About</a>
         </div>
 
         <div className="copyright">
@@ -24,10 +24,22 @@ export const Footer = () => {
       <div className="social">
         <p>Nos Siga!</p>
 
+        <a target="_blank" href="https://www.twitter.com">
         <Twitter width={40} />
+        </a>
+
+        <a target="_blank" href="https://www.youtube.com">
         <Youtube width={40} />
+        </a>
+
+        <a target="_blank" href="https://www.instagram.com/cinetiple">
         <Instagram width={40} />
+        </a>
+        
+        <a  target="_blank" href="https://www.facebook.com"> 
         <Facebook width={40} />
+        </a>
+       
       </div>
     </footer>
   );
