@@ -1,14 +1,9 @@
-
-import React from 'react';
 import useWindowDimensions from '../config/getDimensions';
 import background from '../assets/images/fundo.png'
 import { Typography } from '@mui/material';
 import { useAuthStore } from '../StoresContext';
-
 import { LatestNews } from '../components/LatestNews';
-
-
-
+import {Footer } from '../components/Footer';
 function Home(): any{
   const { width } = useWindowDimensions();
 
@@ -22,16 +17,11 @@ function Home(): any{
   return (
     <>
     <div  style={{backgroundImage: `url('${background}')`}}/>
-    
     <div className="home-image" style={ {overflowX: 'hidden', ...styles.image}}>
-    
       <div style={styles.container}>
         <Typography style={{fontSize: '75px', color: '#CCCCCC', marginLeft: 130, fontFamily: 'Ubuntu', lineHeight: '57px', letterSpacing: '0px', fontWeight: 800}}>
         O site favorito dos DJs e Produtores Musicais!
         </Typography>
-
-
-        
       </div>
    
 
@@ -41,6 +31,7 @@ function Home(): any{
       </Typography>
       </div>
       <LatestNews/>
+      <Footer/>
     </div>
 
     

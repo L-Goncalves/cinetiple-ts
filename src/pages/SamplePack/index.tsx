@@ -4,6 +4,7 @@ import background from '../../assets/images/fundo.png'
 import { ProductDetailsAndPayment } from '../../components/Product';
 import './index.scss';
 import { CardList } from '../../components/CardList';
+import { Footer } from '../../components/Footer'
 
 
 export default function SamplePack(): any{
@@ -19,6 +20,7 @@ export default function SamplePack(): any{
     <div className="home-image" style={ {overflowX: 'hidden', height:'100%', ...styles.image}}>
      <ProductDetailsAndPayment/>
      <CardList/>
+     <Footer/>
     </div>
 
 
