@@ -1,0 +1,63 @@
+import { ArrowRight, ArrowLeft } from "@mui/icons-material";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import img from "../../assets/images/icesamplepack.png";
+import Typography from "@mui/material/Typography";
+import { CardActionArea, CardActions } from "@mui/material";
+import { useHistory } from "react-router-dom";
+import "./index.scss";
+
+export const PackList = () => {
+  const history = useHistory();
+
+  const handlePackSelected = () => {
+    history.push("/samplepack/8129739812");
+  };
+  return (
+    <>
+      <div className="packlist_container">
+        <Card onClick={handlePackSelected} />
+
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+        <Card onClick={handlePackSelected} />
+      </div>
+    </>
+  );
+};
+
+export const Card = ({ onClick }) => {
+  return (
+    <CardActionArea onClick={onClick}>
+      <div className="packcard">
+        <img src={img} height={150} alt="Ice Sample Pack" />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Ice Sample Pack
+          </Typography>
+          <Typography variant="body2">
+            Ultrices fames tristique quis ipsum maecenas nam ipsum mi sit.
+            Commodo, praesent quam volutpat lectus mauris senectus etiam lorem
+            eu.
+          </Typography>
+        </CardContent>
+      </div>
+    </CardActionArea>
+  );
+};

@@ -6,6 +6,7 @@ import "./App.css";
 import { useObserver } from "mobx-react";
 import SamplePack from "./pages/SamplePack";
 import { NavbarWithSidebar } from "./components/NavHeader";
+import SamplePackList from "./pages/SamplePackList";
 
 function App(): JSX.Element {
   return useObserver(() => (
@@ -15,6 +16,9 @@ function App(): JSX.Element {
         <Switch>
           <Route path="/samplepack/:id">
             <SamplePack />
+          </Route>
+          <Route path="/samplepack">
+            <SamplePackList />
           </Route>
           <Route path="/sobre">
             <Home />

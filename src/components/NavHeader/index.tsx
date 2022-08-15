@@ -102,7 +102,7 @@ const Sidebar = () => {
       </Link>
 
       <Link
-        to={"/users/210j3129083j"}
+        to={"/samplepack"}
         onClick={() => {
           SetTabActive("Marketplace");
         }}
@@ -123,7 +123,7 @@ const Sidebar = () => {
       </Link>
 
       <Link
-        to={"/samplepack/d9812389132"}
+        to={"/samplepack"}
         onClick={() => {
           SetTabActive("Blog");
         }}

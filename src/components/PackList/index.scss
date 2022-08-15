@@ -1,0 +1,22 @@
+.packlist {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+
+    background-color: transparent;
+
+    backdrop-filter: blur(10px);
+    margin: 50px auto;
+    gap: 10px;
+  }
+}
+
+.packcard {
+  display: flex;
+  flex-direction: row !important;
+  color: white;
+  background-color: rgba($color: #fff, $alpha: 0.05);
+}
