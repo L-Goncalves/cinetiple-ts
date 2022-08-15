@@ -4,6 +4,7 @@ import { Typography } from "@mui/material";
 import { useAuthStore } from "../StoresContext";
 import { LatestNews } from "../components/LatestNews";
 import { Footer } from "../components/Footer";
+import { CardList } from "../components/CardList";
 function Home(): any {
   const { width } = useWindowDimensions();
 
@@ -53,6 +54,7 @@ function Home(): any {
           </Typography>
         </div>
         <LatestNews />
+        <CardList />
         <Footer />
       </div>
     </>
