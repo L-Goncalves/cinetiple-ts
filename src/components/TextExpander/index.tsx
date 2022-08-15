@@ -6,7 +6,7 @@ export const TextExpander = ({ children }) => {
 
   const handleClick = () => {
     setTextVisible(!textVisible);
-    if (textVisible == false) {
+    if (textVisible === false) {
       setText(children.slice(0, 250) + "...");
     } else {
       setText(children);
