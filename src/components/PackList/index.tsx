@@ -48,6 +48,7 @@ export const Card = ({ onClick }) => {
       <div className="packcard">
         <img src={img} height={150} alt="Ice Sample Pack" />
         <CardContent>
+          <p className="packcard_author">Author</p>
           <Typography gutterBottom variant="h5" component="div">
             Ice Sample Pack
           </Typography>

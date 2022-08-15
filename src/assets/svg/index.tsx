@@ -15,3 +15,5 @@ export { ReactComponent as Facebook } from "./Facebook.svg";
 export { ReactComponent as Instagram } from "./Instagram.svg";
 export { ReactComponent as Twitter } from "./Twitter.svg";
 export { ReactComponent as Youtube } from "./Youtube.svg";
+export { ReactComponent as Cart } from "./Cart.svg";
+export { ReactComponent as CartRedBubble } from "./CartRedBubble.svg";

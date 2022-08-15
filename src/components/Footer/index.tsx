@@ -12,21 +12,21 @@ export const Footer = () => {
         />
         <div className="links">
           <a rel="noreferrer" href="https://www.twitter.com">
-            Terms of Service
+            Termos de uso
           </a>
           <a rel="noreferrer" href="https://www.twitter.com">
-            Privacy Policy
+            Politica de Privacidade
           </a>
           <a rel="noreferrer" href="https://www.twitter.com">
-            Contact Us
+            Entre em Contato
           </a>
           <a rel="noreferrer" href="https://www.twitter.com">
-            About
+            Sobre nós
           </a>
         </div>
 
         <div className="copyright">
-          Copyright ©2008-2022. Netiple Ltda. Todos os direitos reservados.
+          Copyright ©2020-2022. Netiple Ltda. Todos os direitos reservados.
         </div>
       </div>
       <div className="social">

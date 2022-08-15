@@ -1,7 +1,14 @@
 import { useState } from "react";
 import "./index.scss";
 import { Link } from "react-router-dom";
-import { Blog, Home, Cursos, Marketplace } from "../../assets/svg/index";
+import {
+  Blog,
+  Home,
+  Cursos,
+  Marketplace,
+  Cart,
+  CartRedBubble,
+} from "../../assets/svg/index";
 export const Hamburger = () => {
   return (
     <div className="navigation">
@@ -62,6 +69,8 @@ const SearchField = () => {
 const SignInSignUp = () => {
   return (
     <div className="navbar_login_container">
+      <CartRedBubble />
+
       <p className="navbar_login_container_sign_up">Criar Conta</p>
       <div className="navbar_login_container_slash" />
       <button className="navbar_login_container_login">Entrar</button>
