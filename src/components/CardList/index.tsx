@@ -14,7 +14,7 @@ export const CardList = () => {
 
     <div className='cardlist_container'>
       <div className='cardlist_container_title'>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h4" component="div">
           Recomendados
         </Typography>
       </div>
