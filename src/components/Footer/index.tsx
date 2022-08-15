@@ -11,10 +11,10 @@ export const Footer = () => {
           src={process.env.PUBLIC_URL + "/Logo.svg"}
         />
         <div className="links">
-          <a href="#">Terms of Service</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Contact Us</a>
-          <a href="#">About</a>
+          <a href="https://www.twitter.com">Terms of Service</a>
+          <a href="https://www.twitter.com">Privacy Policy</a>
+          <a href="https://www.twitter.com">Contact Us</a>
+          <a href="https://www.twitter.com">About</a>
         </div>
 
         <div className="copyright">
