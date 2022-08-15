@@ -1,8 +1,9 @@
-import useWindowDimensions from '../config/getDimensions';
-import background from '../assets/images/fundo.png'
-import { useAuthStore } from '../StoresContext';
-import { ProductDetailsAndPayment } from '../components/Product';
-
+import useWindowDimensions from '../../config/getDimensions';
+import background from '../../assets/images/fundo.png'
+import { useAuthStore } from '../../StoresContext';
+import { ProductDetailsAndPayment } from '../../components/Product';
+import './index.scss';
+import { CardList } from '../../components/CardList';
 
 
 export default function SamplePack(): any{
@@ -12,22 +13,18 @@ export default function SamplePack(): any{
 
   // authStore.login();
 
-  console.log(width)
+  // console.log(width)
   
-  console.log(authStore.currentUser.usuario);
+  // console.log(authStore.currentUser.usuario);
   return (
     <>
-    
     <div  style={{backgroundImage: `url('${background}')`}}/>
-    
     <div className="home-image" style={ {overflowX: 'hidden', height:'100%', ...styles.image}}>
-
      <ProductDetailsAndPayment/>
-     
-        
+     <CardList/>
     </div>
 
-    
+
     </>
   );
 }
