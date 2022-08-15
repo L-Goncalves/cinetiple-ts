@@ -66,7 +66,7 @@ const styles = {
     backgroundImage: `url('${background}'),linear-gradient(45deg, #0F0F1A 0.00%, #131326 100.00%)`,
     backgroundPosition: "center",
     backgroundSize: "cover",
-    width: "100%",
+    width: "101%",
   },
 
   container: {
