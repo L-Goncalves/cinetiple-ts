@@ -6,7 +6,6 @@ import {
   Home,
   Cursos,
   Marketplace,
-  Cart,
   CartRedBubble,
 } from "../../assets/svg/index";
 export const Hamburger = () => {

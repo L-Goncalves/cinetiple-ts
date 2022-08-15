@@ -1,9 +1,7 @@
-import { ArrowRight, ArrowLeft } from "@mui/icons-material";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import img from "../../assets/images/icesamplepack.png";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions } from "@mui/material";
+import { CardActionArea } from "@mui/material";
 import { useHistory } from "react-router-dom";
 import "./index.scss";
 

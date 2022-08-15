@@ -1,6 +1,4 @@
 import background from "../../assets/images/fundo.png";
-
-import { ProductDetailsAndPayment } from "../../components/Product";
 import "./index.scss";
 import { PackList } from "../../components/PackList";
 import { Footer } from "../../components/Footer";
