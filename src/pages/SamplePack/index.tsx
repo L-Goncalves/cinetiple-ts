@@ -1,15 +1,12 @@
-import useWindowDimensions from '../../config/getDimensions';
+
 import background from '../../assets/images/fundo.png'
-import { useAuthStore } from '../../StoresContext';
+
 import { ProductDetailsAndPayment } from '../../components/Product';
 import './index.scss';
 import { CardList } from '../../components/CardList';
 
 
 export default function SamplePack(): any{
-  const { width } = useWindowDimensions();
-
-  const authStore = useAuthStore()
 
   // authStore.login();
 
