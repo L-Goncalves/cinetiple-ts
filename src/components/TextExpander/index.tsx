@@ -1,4 +1,4 @@
-import './index.scss'
+import "./index.scss";
 export const TextExpander = () => {
-        <p>TextExpander</p>
-}
+  <p>TextExpander</p>;
+};

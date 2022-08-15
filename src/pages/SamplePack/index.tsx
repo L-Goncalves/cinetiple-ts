@@ -1,55 +1,49 @@
+import background from "../../assets/images/fundo.png";
 
-import background from '../../assets/images/fundo.png'
+import { ProductDetailsAndPayment } from "../../components/Product";
+import "./index.scss";
+import { CardList } from "../../components/CardList";
+import { Footer } from "../../components/Footer";
 
-import { ProductDetailsAndPayment } from '../../components/Product';
-import './index.scss';
-import { CardList } from '../../components/CardList';
-import { Footer } from '../../components/Footer'
-
-
-export default function SamplePack(): any{
-
+export default function SamplePack(): any {
   // authStore.login();
 
   // console.log(width)
-  
+
   // console.log(authStore.currentUser.usuario);
   return (
     <>
-    <div  style={{backgroundImage: `url('${background}')`}}/>
-    <div className="home-image" style={ {overflowX: 'hidden', height:'100%', ...styles.image}}>
-     <ProductDetailsAndPayment/>
-     <CardList/>
-     <Footer/>
-    </div>
-
-
+      <div style={{ backgroundImage: `url('${background}')` }} />
+      <div
+        className="home-image"
+        style={{ overflowX: "hidden", height: "100%", ...styles.image }}
+      >
+        <ProductDetailsAndPayment />
+        <CardList />
+        <Footer />
+      </div>
     </>
   );
 }
 
-
 const styles = {
-  image:{
+  image: {
     backgroundImage: `url('${background}'),linear-gradient(45deg, #0F0F1A 0.00%, #131326 100.00%)`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    width:'100%'
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    width: "100%",
   },
 
-  container:{
+  container: {
     marginTop: 100,
-    maxWidth: '50%'
-  }
-  
-
-}
-
+    maxWidth: "50%",
+  },
+};
 
 // .topnav a {
 
-//   color: 
-  
+//   color:
+
 //   padding: 14px 16px;
 //   text-decoration: none;
 //   font-size: 17px;

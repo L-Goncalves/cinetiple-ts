@@ -1,70 +1,68 @@
-.news{
+.news {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 300px;
+  border: 1px solid orangered;
+  margin-left: 170px;
+  border-radius: 35px;
+  margin-top: 50px;
+
+  padding: 15px 0px 0px 25px;
+  &_header_title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &_container {
+    overflow-y: scroll;
+    max-height: 200px;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #ffffff6b;
+      border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+  &_content {
+    width: 570px;
+
     display: flex;
+    align-self: flex-start;
     flex-direction: column;
-    width: 600px;
-    height: 300px;
-    border: 1px solid orangered;
-    margin-left: 170px;
-    border-radius: 35px;
-    margin-top: 50px;
-   
-    padding: 15px 0px 0px 25px;
-    &_header_title{
 
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bold;
-      
+    &_title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
     }
 
-    &_container{
-        overflow-y: scroll;
-        max-height: 200px;
-        &::-webkit-scrollbar {
-            width: 10px;
-          }
-          
-          /* Track */
-          &::-webkit-scrollbar-track {
-            background: transparent
-          }
-          
-          /* Handle */
-          &::-webkit-scrollbar-thumb {
-            background: #ffffff6b;
-            border-radius: 5px;
-          }
-          
-          /* Handle on hover */
-          &::-webkit-scrollbar-thumb:hover {
-            background: #555;
-          }
+    &_line {
+      height: 1px;
+      width: 94%;
+      background-color: rgba(255, 255, 255, 0.2);
     }
-    &_content{
-        width: 570px;
-  
-        display: flex;
-        align-self: flex-start;
-        flex-direction: column;
-
-        &_title{
-            font-size: 1.5rem;
-            font-weight: 600;
-            color:white
-        }
-
-        &_line{
-            height: 1px;
-            width: 94%;
-            background-color:rgba(255,255,255,0.2);
-        }
-        &_date{
-            align-self: flex-end;
-            margin-top: -30px;
-            font-size: 0.8rem;
-            padding-right: 5px;
-            font-weight: 600;
-            color:rgba(255,255,255,0.5);
-        }
+    &_date {
+      align-self: flex-end;
+      margin-top: -30px;
+      font-size: 0.8rem;
+      padding-right: 5px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.5);
     }
+  }
 }

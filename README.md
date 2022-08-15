@@ -7,14 +7,13 @@
 Preview: https://netiple.netlify.app/
 
 ### Features
-  Todos com ⚠ estão em desenvolvimento
 
+Todos com ⚠ estão em desenvolvimento
 
-- [ ] Autenticação     ⚠ 
-- [ ] Player de aúdio  ⚠ 
-- [ ] Responsividade   ⚠ 
-- [ ] Criação de Conta ⚠ 
-- [ ] Marketplace ⚠ 
-- [ ] Blog ⚠ 
-- [ ] Compras com Stripe ⚠ 
-
+- [ ] Autenticação ⚠
+- [ ] Player de aúdio ⚠
+- [ ] Responsividade ⚠
+- [ ] Criação de Conta ⚠
+- [ ] Marketplace ⚠
+- [ ] Blog ⚠
+- [ ] Compras com Stripe ⚠

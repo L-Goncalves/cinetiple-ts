@@ -12,13 +12,13 @@ import IconButton from "@mui/material/IconButton";
 import { textAlign } from "@mui/system";
 
 export default function Notifications() {
-//   const [auth, setAuth] = React.useState(false);
+  //   const [auth, setAuth] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [notification, setNotificationNumber] = React.useState(10);
 
-//   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-//     setAuth(event.target.checked);
-//   };
+  //   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //     setAuth(event.target.checked);
+  //   };
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -39,47 +39,39 @@ export default function Notifications() {
 
   return (
     <div style={{ paddingRight: "25px" }}>
-     
-        <div>
-          {notification == 0 ? (
-
-            <>
-             <IconButton
-                    aria-label="account of current user"
-                    aria-controls="menu-appbar"
-                    aria-haspopup="true"
-                    onClick={handleMenu}
-                    color="inherit"
-                >
-                        <NotificationsIcon fontSize="large" />
-                </IconButton>
-          
-            </>
-          ) : (
-            <>
-             <IconButton
-                    aria-label="account of current user"
-                    aria-controls="menu-appbar"
-                    aria-haspopup="true"
-                    onClick={() => {
-                        setNotificationNumber(notification +1);
-                      }}
-                    color="inherit"
-                >
-            <div style={{ ...styles.notificationCounter }}>
+      <div>
+        {notification == 0 ? (
+          <>
+            <IconButton
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleMenu}
+              color="inherit"
+            >
+              <NotificationsIcon fontSize="large" />
+            </IconButton>
+          </>
+        ) : (
+          <>
+            <IconButton
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={() => {
+                setNotificationNumber(notification + 1);
+              }}
+              color="inherit"
+            >
+              <div style={{ ...styles.notificationCounter }}>
                 {`${notification}`}
               </div>
-              <NotificationsIcon
-                fontSize="large"
-                
-              />
-                </IconButton>
-          
-             
-            </>
-          )}
-        </div>
-  
+              <NotificationsIcon fontSize="large" />
+            </IconButton>
+          </>
+        )}
+      </div>
+
       {/* <Menu
         id="menu-appbar"
         anchorEl={anchorEl}
@@ -115,7 +107,7 @@ const styles = {
     height: "11px",
     backgroundColor: "red",
     fontSize: "8px",
-    marginBottom: '20px',
+    marginBottom: "20px",
     marginRight: "8px",
     borderRadius: "1000px",
     position: "absolute" as "absolute",

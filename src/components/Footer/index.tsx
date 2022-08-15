@@ -1,15 +1,5 @@
-import './index.scss'
-
+import "./index.scss";
 
 export const Footer = () => {
-  return (
-    <div className='footer'>
-        
-    </div>
-    ) 
-}
-
-
-
-
-
+  return <div className="footer"></div>;
+};

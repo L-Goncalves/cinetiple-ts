@@ -1,16 +1,15 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
-
+import * as React from "react";
+import { styled } from "@mui/material/styles";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  '& .MuiDialogContent-root': {
+  "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
   },
-  '& .MuiDialogActions-root': {
+  "& .MuiDialogActions-root": {
     padding: theme.spacing(1),
   },
 }));
@@ -32,7 +31,7 @@ const CustomDialog = (props: DialogTitleProps) => {
           aria-label="close"
           onClick={onClose}
           sx={{
-            position: 'absolute',
+            position: "absolute",
             right: 8,
             top: 8,
             color: (theme) => theme.palette.grey[500],
@@ -46,16 +45,13 @@ const CustomDialog = (props: DialogTitleProps) => {
 };
 
 export default function CustomizedDialogs(props) {
-
-    
-  
-    // console.log(openModal)
-//   const handleClickOpen = () => {
-//     // setOpen(true);
-//   };
-//   const handleClose = () => {
-//     setOpen(false)
-//   };
+  // console.log(openModal)
+  //   const handleClickOpen = () => {
+  //     // setOpen(true);
+  //   };
+  //   const handleClose = () => {
+  //     setOpen(false)
+  //   };
 
   return (
     <div>
@@ -63,11 +59,11 @@ export default function CustomizedDialogs(props) {
         Open dialog
       </Button> */}
       <BootstrapDialog
-        onClose={() =>  props.onClose()}
+        onClose={() => props.onClose()}
         aria-labelledby="customized-dialog-title"
         open={props.open}
       >
-     {props.children}
+        {props.children}
       </BootstrapDialog>
     </div>
   );

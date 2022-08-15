@@ -1,51 +1,33 @@
-import React from 'react';
-import Home from './pages/Home'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import React from "react";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import "./App.css";
+import { useObserver } from "mobx-react";
+import SamplePack from "./pages/SamplePack";
+import { NavbarWithSidebar } from "./components/NavHeader";
 
-
-
-
-import './App.css';
-import { useObserver } from 'mobx-react';
-import SamplePack from './pages/SamplePack';
-import { NavbarWithSidebar } from './components/NavHeader';
-
-
-function App(): JSX.Element{
-
-  
-
-  return useObserver( () => (
-    
+function App(): JSX.Element {
+  return useObserver(() => (
     <>
-    
       <Router>
-      <NavbarWithSidebar/>
-       <Switch>
-     
-
-       <Route path='/samplepack/:id'>
-     
-              <SamplePack/>
+        <NavbarWithSidebar />
+        <Switch>
+          <Route path="/samplepack/:id">
+            <SamplePack />
           </Route>
           <Route path="/sobre">
             <Home />
           </Route>
           <Route path="/users/:id">
-            <Home/>
+            <Home />
           </Route>
           <Route path="/">
             <Home />
           </Route>
-         
         </Switch>
-        </Router>
-  </>
+      </Router>
+    </>
   ));
 }
 
