@@ -10,6 +10,7 @@ import {
   Paypal,
   AmericanExpress,
 } from "../../assets/svg";
+import { TextExpander } from "../TextExpander";
 
 export const ProductDetailsAndPayment = () => {
   return (
@@ -74,12 +75,19 @@ const ProductDetails = () => {
       </p>
       <br />
       <p>Descrição</p>
-      <p>
+      <TextExpander>
         Ultrices fames tristique quis ipsum maecenas nam ipsum mi sit. Commodo,
         praesent quam volutpat lectus mauris senectus etiam lorem eu. Nec
         sollicitudin tincidunt tincidunt quis nibh sit. Semper in ac mollis
-        posuere nulla. In vel, nam justo arcu cursus...Ler mais.
-      </p>
+        posuere nulla. In vel, nam justo arcu cursus. Ultrices fames tristique
+        quis ipsum maecenas nam ipsum mi sit. Commodo, praesent quam volutpat
+        lectus mauris senectus etiam lorem eu. Nec sollicitudin tincidunt
+        tincidunt quis nibh sit. Semper in ac mollis posuere nulla. In vel, nam
+        justo arcu cursus. Ultrices fames tristique quis ipsum maecenas nam
+        ipsum mi sit. Commodo, praesent quam volutpat lectus mauris senectus
+        etiam lorem eu. Nec sollicitudin tincidunt tincidunt quis nibh sit.
+        Semper in ac mollis posuere nulla. In vel, nam justo arcu cursus.
+      </TextExpander>
     </>
   );
 };
