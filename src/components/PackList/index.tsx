@@ -1,9 +1,10 @@
 import CardContent from "@mui/material/CardContent";
 import img from "../../assets/images/icesamplepack.png";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, Pagination } from "@mui/material";
 import { useHistory } from "react-router-dom";
 import "./index.scss";
+import ReactPaginate from "react-paginate";
 
 export const PackList = () => {
   const history = useHistory();
@@ -14,27 +15,9 @@ export const PackList = () => {
   return (
     <>
       <div className="packlist_container">
-        <Card onClick={handlePackSelected} />
-
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
-        <Card onClick={handlePackSelected} />
+        {[1,2,3,4,5,6,7,8,9,10].map((item) => {
+          return <Card onClick={handlePackSelected} />
+        })}
       </div>
     </>
   );
