@@ -5,6 +5,7 @@ import img from "../../assets/images/icesamplepack.png";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions } from "@mui/material";
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 export const CardList = () => {
   return (
@@ -24,7 +25,8 @@ export const CardList = () => {
           <Card />
           <ArrowRight className="card_arrow" />
         </div>
-        <div className="check_other_products">Ver outros produtos</div>
+        <div className="check_other_products"> 
+        <Link to={`/samplepack`}> Ver outros produtos</Link></div>
       </div>
     </>
   );

@@ -53,10 +53,15 @@
   }
 }
 
-.check_other_products {
-  margin: 20px 0px;
-  font-size: 20px;
+.check_other_products{
   font-weight: 500;
   align-self: center;
-  color: orangered;
+  & > a{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: orangered;
+    text-decoration: none;
+  }
 }
+
