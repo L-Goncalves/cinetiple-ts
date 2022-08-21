@@ -1,10 +1,10 @@
 import CardContent from "@mui/material/CardContent";
 import img from "../../assets/images/icesamplepack.png";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, Pagination } from "@mui/material";
+import { CardActionArea } from "@mui/material";
 import { useHistory } from "react-router-dom";
 import "./index.scss";
-import ReactPaginate from "react-paginate";
+
 
 export const PackList = () => {
   const history = useHistory();
