@@ -19,8 +19,8 @@ export default function SamplePack(): any {
         className="home-image"
         style={{ overflowX: "hidden", height: "100%", ...styles.image }}
       >
-        <Modal open={false} onClose={() => {}}/>
-       
+        <Modal open={false} onClose={() => {}} />
+
         <ProductDetailsAndPayment />
         <CardList />
         <Footer />

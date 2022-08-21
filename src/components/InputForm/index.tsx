@@ -1,12 +1,9 @@
-
 import "./index.scss";
 
-export const InputForm = ({type}) => {
+export const InputForm = ({ type }) => {
   return (
     <>
-        <input className="input" placeholder={type} type={type}/>
+      <input className="input" placeholder={type} type={type} />
     </>
   );
 };
-
-

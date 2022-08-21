@@ -5,7 +5,6 @@ import { CardActionArea } from "@mui/material";
 import { useHistory } from "react-router-dom";
 import "./index.scss";
 
-
 export const PackList = () => {
   const history = useHistory();
 
@@ -15,8 +14,8 @@ export const PackList = () => {
   return (
     <>
       <div className="packlist_container">
-        {[1,2,3,4,5,6,7,8,9,10].map(() => {
-          return <Card onClick={handlePackSelected} />
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(() => {
+          return <Card onClick={handlePackSelected} />;
         })}
       </div>
     </>

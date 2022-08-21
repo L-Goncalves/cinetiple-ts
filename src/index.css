@@ -11,11 +11,10 @@ html {
   overflow-x: hidden;
 }
 
-
 @media (max-height: 949px) {
   .home-image {
     height: -webkit-fill-available;
-    background-size: contain; 
+    background-size: contain;
   }
 }
 

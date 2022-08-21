@@ -25,8 +25,9 @@ export const CardList = () => {
           <Card />
           <ArrowRight className="card_arrow" />
         </div>
-        <div className="check_other_products"> 
-        <Link to={`/samplepack`}> Ver outros produtos</Link></div>
+        <div className="check_other_products">
+          <Link to={`/samplepack`}> Ver outros produtos</Link>
+        </div>
       </div>
     </>
   );
