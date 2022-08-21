@@ -8,6 +8,7 @@ import {
   Marketplace,
   CartRedBubble,
 } from "../../assets/svg/index";
+import Modal from "../LoginCreateAccount";
 export const Hamburger = () => {
   return (
     <div className="navigation">
@@ -66,13 +67,17 @@ const SearchField = () => {
 };
 
 const SignInSignUp = () => {
+  const [openSignIn, setOpen] = useState(false)
+
   return (
     <div className="navbar_login_container">
       <CartRedBubble />
+      <Modal open={openSignIn} onClose={ () => setOpen(false)}/>
+      
 
       <p className="navbar_login_container_sign_up">Criar Conta</p>
       <div className="navbar_login_container_slash" />
-      <button className="navbar_login_container_login">Entrar</button>
+      <button className="navbar_login_container_login"  onClick={() => setOpen(true)}>Entrar</button>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { useAuthStore } from "../StoresContext";
 import { LatestNews } from "../components/LatestNews";
 import { Footer } from "../components/Footer";
 import { CardList } from "../components/CardList";
+import Modal from "../components/LoginCreateAccount";
 function Home(): any {
   const { width } = useWindowDimensions();
 
@@ -57,6 +58,8 @@ function Home(): any {
         <CardList />
         <Footer />
       </div>
+
+    
     </>
   );
 }

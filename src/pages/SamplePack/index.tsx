@@ -4,6 +4,7 @@ import { ProductDetailsAndPayment } from "../../components/Product";
 import "./index.scss";
 import { CardList } from "../../components/CardList";
 import { Footer } from "../../components/Footer";
+import Modal from "../../components/LoginCreateAccount";
 
 export default function SamplePack(): any {
   // authStore.login();
@@ -18,6 +19,8 @@ export default function SamplePack(): any {
         className="home-image"
         style={{ overflowX: "hidden", height: "100%", ...styles.image }}
       >
+        <Modal open={false} onClose={() => {}}/>
+       
         <ProductDetailsAndPayment />
         <CardList />
         <Footer />
