@@ -15,7 +15,7 @@ export const PackList = () => {
   return (
     <>
       <div className="packlist_container">
-        {[1,2,3,4,5,6,7,8,9,10].map((item) => {
+        {[1,2,3,4,5,6,7,8,9,10].map(() => {
           return <Card onClick={handlePackSelected} />
         })}
       </div>

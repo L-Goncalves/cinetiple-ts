@@ -44,7 +44,7 @@ const useMultiAudio = (urls) => {
 
       source.audio.addEventListener(
         "loadeddata",
-        function getAudioDuration(this: any, event) {
+        function getAudioDuration(this: any) {
           players[0].duration = duration;
 
           const newPlayers = players.map((player) => {
@@ -70,7 +70,7 @@ const useMultiAudio = (urls) => {
 
         source.audio.addEventListener(
           "loadeddata",
-          function getAudioDuration(this: any, event) {
+          function getAudioDuration(this: any) {
             setDuration(this.duration);
           }
         );
