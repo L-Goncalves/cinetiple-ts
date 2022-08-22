@@ -10,10 +10,13 @@ Preview: https://netiple.netlify.app/
 
 Todos com ⚠ estão em desenvolvimento
 
-- [ ] Autenticação ⚠
-- [ ] Player de aúdio ⚠
-- [ ] Responsividade ⚠
-- [ ] Criação de Conta ⚠
-- [ ] Marketplace ⚠
+- [ ] Autenticação SSO e por email e senha⚠
 - [ ] Blog ⚠
+- [ ] Visualização de outros usuarios ⚠
+- [ ] Chat ⚠
+- [ ] Player de aúdio ⚠
+- [ ] Responsividade (não é prioridade) ⚠
+- [ ] Criação de Conta ⚠
+- [ ] Paginação via API para Sample Packs ⚠
+- [ ] Marketplace ⚠
 - [ ] Compras com Stripe ⚠
