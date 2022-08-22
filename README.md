@@ -19,4 +19,4 @@ Todos com ⚠ estão em desenvolvimento
 - [ ] Criação de Conta ⚠
 - [ ] Paginação via API para Sample Packs ⚠
 - [ ] Marketplace ⚠
-- [ ] Compras com Stripe ⚠
+- [ ] Compras com Stripe & Paypal⚠
